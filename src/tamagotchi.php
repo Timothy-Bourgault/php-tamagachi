@@ -9,8 +9,9 @@ class Tamagotchi
     private $actions;
     // private $life_stage;
 
+
 //Constructor
-    function __construct($name, $food = 4, $attention = 5, $rest = 6, $actions = 5)
+    function __construct($name, $food, $attention, $rest, $actions = 5)
     {
         $this->name = $name;
         $this->food = $food;

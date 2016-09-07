@@ -13,6 +13,12 @@
 
     // Home Route
     $app->get("/", function() use ($app) {
+        $init_food = rand(2, 4);
+        $init_attention = rand(2, 5);
+        $init_rest = rand(3, 6);
+
+
+
         return $app['twig']->render('tamagotchi_home.html.twig');
     });
 
